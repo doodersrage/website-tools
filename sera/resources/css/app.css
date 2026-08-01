@@ -1,0 +1,254 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.sera-body {
+    font-family: var(--font-sans);
+    background: #f4f6f8;
+    color: #1a1a1a;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.sera-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem 1rem 3rem;
+}
+
+.sera-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.sera-header h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 0 0 0.25rem;
+}
+
+.sera-subtitle {
+    color: #5c6670;
+    margin: 0;
+}
+
+.sera-card {
+    background: #fff;
+    border: 1px solid #d8dee4;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 6%);
+}
+
+.sera-field {
+    margin-bottom: 1rem;
+}
+
+.sera-field label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+}
+
+.sera-field input[type='text'],
+.sera-field input[type='email'],
+.sera-field textarea {
+    width: 100%;
+    border: 1px solid #c5ccd3;
+    border-radius: 6px;
+    padding: 0.55rem 0.65rem;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+.sera-field textarea {
+    resize: vertical;
+}
+
+.sera-field-inline {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sera-field-inline label {
+    margin: 0;
+    font-weight: 500;
+}
+
+.sera-hint,
+.sera-optional {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.sera-actions {
+    text-align: center;
+    margin-top: 1.25rem;
+}
+
+.sera-btn {
+    background: #2563eb;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 600;
+    padding: 0.65rem 1.25rem;
+}
+
+.sera-btn:hover {
+    background: #1d4ed8;
+}
+
+.sera-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.sera-btn-secondary {
+    background: #374151;
+}
+
+.sera-btn-secondary:hover {
+    background: #1f2937;
+}
+
+.sera-btn-link {
+    background: none;
+    border: none;
+    color: #2563eb;
+    cursor: pointer;
+    font: inherit;
+    text-decoration: underline;
+}
+
+.sera-status {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.sera-spinner {
+    width: 36px;
+    height: 36px;
+    border: 3px solid #dbeafe;
+    border-top-color: #2563eb;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    animation: sera-spin 0.8s linear infinite;
+}
+
+.sera-timer {
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+}
+
+.sera-results {
+    margin-top: 1.5rem;
+}
+
+.sera-results-header {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.sera-keyword-block {
+    margin-bottom: 2rem;
+}
+
+.sera-keyword-title {
+    font-size: 1.125rem;
+    margin: 0 0 0.75rem;
+}
+
+.sera-table-wrap {
+    overflow-x: auto;
+}
+
+.tbl_results {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border: 1px solid #d8dee4;
+}
+
+.tbl_results th,
+.tbl_results td {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 0.5rem 0.65rem;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+.tbl_results th {
+    background: #e5e7eb;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.tbl_results td.sera-link-cell {
+    text-align: left;
+    word-break: break-all;
+}
+
+.hdr-ste-2 {
+    background: #fecaca;
+}
+
+.hdr-ste-3 {
+    background: #fef08a;
+}
+
+.hdr-ste-4 {
+    background: #bbf7d0;
+}
+
+.sera-domain-row {
+    background: #f9fafb;
+    font-weight: 600;
+}
+
+.sera-empty {
+    color: #6b7280;
+    font-style: italic;
+}
+
+.sera-print {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.sera-error {
+    color: #b91c1c;
+    text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@keyframes sera-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media print {
+    .sera-card,
+    .sera-results-header,
+    .sera-print,
+    .sera-btn {
+        display: none !important;
+    }
+
+    .sera-body {
+        background: #fff;
+    }
+}

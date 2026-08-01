@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+.search_term {
+	font-weight:700;
+	font-size:24px;
+	background-color:#EAEAEA
+}
+th {
+	background-color:#D8D8D8;
+}
+.srch_tbl {
+	border:1px solid #666;
+}
+.reports_rtn {
+	margin:0 auto;
+	margin-top:15px;
+	padding:6px;
+}
+.tbl_results th {
+	cursor:pointer;
+}
+.tbl_results td {
+	text-align:center;
+	border-bottom:1px solid #666;
+}
+.hdr_ste_2 {
+	background-color:#FF8080;
+}
+.hdr_ste_3 {
+	background-color:#FF0;
+}
+.hdr_ste_4 {
+	background-color:#0F0;
+}
+.hdr_ste_5 {
+	background-color:#FF8080;
+}
+.hdr_ste_6 {
+	background-color:#FF0;
+}
+.hdr_ste_7 {
+	background-color:#0F0;
+}
+.vb_output {
+	width:700px;
+	height:175px;
+	overflow:scroll;
+}
+#search_text {
+	padding:4px;
+}
