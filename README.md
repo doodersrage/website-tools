@@ -19,7 +19,6 @@ Modern Laravel rebuild of the legacy CM Sera keyword competitiveness tool.
 ## Setup
 
 ```bash
-cd sera
 composer install
 cp .env.example .env
 php artisan key:generate
